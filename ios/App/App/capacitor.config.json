@@ -1,0 +1,6 @@
+{
+	"appId": "net.michaelcalvinwood.memories",
+	"appName": "Memories",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import MemoriesContextProvider from './data/MemoriesContextProvider';
+
+// By wrapping the App component in the Provider we can access (initialize) the context within the App component itself
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MemoriesContextProvider>
+      <App />
+    </MemoriesContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
